@@ -4,8 +4,9 @@
   "description": "Fishroom is a home automation controller, intended to do day to day tasks for fish keepers. The system should ran on a RaspberryPI, with a relay board connected. With that hardware, it's possible to turn on and off any AC equipment (such as lights, water pumps, etc).",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js"
+    "start": "node server.js",
+    "test": "./node_modules/.bin/jasmine spec/*",
+    "ci": "start-server-and-test start http://localhost:3000 test"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,10 @@
   "homepage": "https://github.com/dklight/fishroom#readme",
   "dependencies": {
     "hapi": "^17.8.1"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1",
+    "request": "^2.88.0",
+    "start-server-and-test": "^1.7.11"
   }
 }
