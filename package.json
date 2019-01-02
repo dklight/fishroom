@@ -1,0 +1,26 @@
+{
+  "name": "fishroom",
+  "version": "0.1.0",
+  "description": "Fishroom is a home automation controller, intended to do day to day tasks for fish keepers. The system should ran on a RaspberryPI, with a relay board connected. With that hardware, it's possible to turn on and off any AC equipment (such as lights, water pumps, etc).",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dklight/fishroom.git"
+  },
+  "keywords": [
+    "automation",
+    "fish",
+    "tank",
+    "raspberry",
+    "relay"
+  ],
+  "author": "Bernabé García <dklight@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dklight/fishroom/issues"
+  },
+  "homepage": "https://github.com/dklight/fishroom#readme"
+}
