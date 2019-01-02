@@ -4,7 +4,8 @@
   "description": "Fishroom is a home automation controller, intended to do day to day tasks for fish keepers. The system should ran on a RaspberryPI, with a relay board connected. With that hardware, it's possible to turn on and off any AC equipment (such as lights, water pumps, etc).",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
