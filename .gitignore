@@ -1,0 +1,6 @@
+# Vim files
+*.swp
+*.swo
+
+# Node files
+node_modules/
