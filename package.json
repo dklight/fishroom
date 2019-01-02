@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/dklight/fishroom/issues"
   },
-  "homepage": "https://github.com/dklight/fishroom#readme"
+  "homepage": "https://github.com/dklight/fishroom#readme",
+  "dependencies": {
+    "hapi": "^17.8.1"
+  }
 }
