@@ -1,0 +1,10 @@
+{
+	"extends": "strongloop",
+	"parserOptions": {
+        "ecmaVersion": 8
+    },
+    "plugins": ["jasmine"],
+    "env": {
+        "jasmine": true
+    }
+}
