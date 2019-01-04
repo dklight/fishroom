@@ -31,7 +31,7 @@ describe('Fishroom API', function() {
           console.log(error.stack);
           fail('Error while testing welcome message');
         }
-        expect(body).toBe('Welcome to fishroom 0.1.0!');
+        expect(body).toMatch('Welcome to fishroom [0-9]+.[0-9]+.[0.9]+!');
         done();
       });
     });
