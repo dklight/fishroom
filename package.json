@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "./node_modules/.bin/jasmine spec/*",
+    "test": "./node_modules/.bin/jasmine",
     "ci": "start-server-and-test start http://localhost:3000 test"
   },
   "repository": {
