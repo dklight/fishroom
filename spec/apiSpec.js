@@ -3,6 +3,11 @@ let request = require("request");
 let base_url = "http://localhost:3000/"
 
 describe("Fishroom API", function() {
+  var server;
+  beforeAll(() => {
+    server = require("../server");
+  });
+
   describe("GET /", function() {
     it("returns status code 200", function(done) {
       request.get(base_url, function(error, response, body) {
