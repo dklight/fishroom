@@ -5,5 +5,5 @@
 # Node files
 node_modules/
 
-# Sublime
-*.sublime-*
+# coverage
+coverage/
