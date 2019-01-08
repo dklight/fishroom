@@ -1,12 +1,12 @@
 'use strict';
 let request = require('request');
 
-let base_url = 'http://localhost:3000/';
+let base_url = 'http://localhost:8000/';
 
 describe('Fishroom API', function() {
   var server;
   beforeAll(() => {
-    server = require('../server');
+    server = require('../src/server');
   });
 
   afterAll(() => {
@@ -25,12 +25,13 @@ describe('Fishroom API', function() {
       });
     });
 
-    it('returns Welcome to fishroom version', function(done) {
+    xit('shows 8 buttons', function(done) {
       request.get(base_url, function(error, response, body) {
         if (error) {
           console.log(error.stack);
           fail('Error while testing welcome message');
         }
+
         expect(body).toMatch('Welcome to fishroom [0-9]+.[0-9]+.[0.9]+!');
         done();
       });
