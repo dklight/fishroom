@@ -10,3 +10,7 @@ node_modules/
 
 # coverage
 coverage/
+
+# Webpack generated files
+public/js/*
+public/css/*

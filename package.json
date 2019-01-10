@@ -8,7 +8,8 @@
     "lint": "eslint --ignore-path .gitignore .",
     "prettify": "prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js",
     "pretest": "npm run lint",
-    "test": "istanbul cover --include-all-sources jasmine"
+    "test": "istanbul cover --include-all-sources jasmine",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -34,12 +35,21 @@
     "vue": "^2.5.21"
   },
   "devDependencies": {
-    "eslint": "^5.11.1",
+    "babel-eslint": "^10.0.1",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.12.0",
     "eslint-config-strongloop": "^2.1.0",
+    "eslint-loader": "^2.1.1",
     "eslint-plugin-jasmine": "^2.10.1",
+    "eslint-plugin-vue": "^5.1.0",
     "istanbul": "^1.1.0-alpha.1",
     "jasmine": "^3.3.1",
     "prettier": "^1.15.3",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "vue-loader": "^15.5.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
   }
 }

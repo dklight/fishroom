@@ -8,10 +8,10 @@ const register = async server => {
   // static files
   server.route({
     method: 'GET',
-    path: '/public/{file*}',
+    path: '/{param*}',
     handler: {
       directory: {
-        path: 'public',
+        path: './public/',
         redirectToSlash: true,
         index: true,
       },
