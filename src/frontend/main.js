@@ -1,8 +1,9 @@
 'use strivct'
 
 import Vue from 'vue';
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
 import App from './App.vue';
-// import Ports from './Ports.vue';
 
 Vue.config.productionTip = false
 
@@ -10,4 +11,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   render: h => h(App)
-})
+});
+
+Vue.use(Vuetify);
