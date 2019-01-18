@@ -4,17 +4,12 @@ const gpio = require('../gpio');
 module.exports = server => {
   server.route({
     method: 'GET',
-    path: '/port/{port}/on',
+    path: '/port/{port}/{action}',
     handler: (request, h) => {
-      return gpio.turnPortOn(encodeURIComponent(request.params.port));
-    },
-  });
-
-  server.route({
-    method: 'GET',
-    path: '/port/{port}/off',
-    handler: (request, h) => {
-      return gpio.turnPortOff(encodeURIComponent(request.params.port));
+      return gpio.turnPort(
+        encodeURIComponent(request.params.port),
+        encodeURIComponent(request.params.action)
+      );
     },
   });
 };

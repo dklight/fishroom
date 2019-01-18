@@ -43,23 +43,29 @@ export default {
         { number: "4", status: false }
       ],
       snackbar: false,
-      timeout: 6000,
+      timeout: 3000,
       alertMessage: ""
     };
   },
   methods: {
+    onToogleSuccess(message) {
+      this.alertMessage = message;
+      this.snackbar = true;
+    },
     tooglePort(number) {
+      const axios = require("axios");
+      let action = "";
       if (this.ports[number - 1].status == true) {
-        this.ports[number - 1].status = false;
-        console.log("Port " + number + " is Off");
-        this.alertMessage = "Port " + number + " is Off";
-        this.snackbar = true;
+        action = "Off";
       } else {
-        this.ports[number - 1].status = true;
-        console.log("Port " + number + " is On");
-        this.alertMessage = "Port " + number + " is On";
-        this.snackbar = true;
+        action = "On";
       }
+      axios
+        .get("/port/" + number + "/" + action)
+        .then(response=>this.onToogleSuccess("Port " + number + " is " + action))
+        .catch(function(error) {
+          console.log(error);
+        });
     }
   }
 };
