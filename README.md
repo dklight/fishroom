@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/dklight/fishroom.svg?branch=master)](https://travis-ci.org/dklight/fishroom)
+[![codecov](https://codecov.io/gh/dklight/fishroom/branch/master/graph/badge.svg)](https://codecov.io/gh/dklight/fishroom)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # Fishroom
