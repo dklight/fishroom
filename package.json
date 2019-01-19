@@ -8,7 +8,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "prettify": "prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js",
     "pretest": "npm run lint",
-    "test": "istanbul cover --include-all-sources jasmine",
+    "test": "istanbul cover --include-all-sources --report lcovonly --report text-summary jasmine",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
