@@ -43,7 +43,7 @@ describe('Fishroom API', function() {
           console.log(error.stack);
           fail('Error while turning port 8 on');
         }
-        expect(body).toBe('Turning on port 8!');
+        expect(body).toMatch('.*[Tt]urning on port 8!');
         done();
       });
     });
@@ -54,7 +54,7 @@ describe('Fishroom API', function() {
           console.log(error.stack);
           fail('Error while turning port 8 off');
         }
-        expect(body).toBe('Turning off port 8!');
+        expect(body).toMatch('.*[Tt]urning off port 8!');
         done();
       });
     });

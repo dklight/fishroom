@@ -62,7 +62,7 @@ export default {
       }
       axios
         .get("/port/" + number + "/" + action)
-        .then(response=>this.onToogleSuccess("Port " + number + " is " + action))
+        .then(response=>this.onToogleSuccess(response.data))
         .catch(function(error) {
           console.log(error);
         });
